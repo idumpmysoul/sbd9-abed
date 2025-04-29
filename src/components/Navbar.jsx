@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function Navbar({ name, menuItems }) {
+function Navbar({name, menuItems }) {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -11,12 +11,9 @@ function Navbar({ name, menuItems }) {
         <nav className="bg-gray-800 text-white">
         <div className="container mx-auto px-4">
             <div className="flex flex-wrap items-center justify-between py-4">
-            {/* Logo/Name */}
             <div className="flex items-center">
                 <span className="font-bold text-xl">{name}</span>
             </div>
-
-            {/* Mobile menu button */}
             <div className="md:hidden">
                 <button
                 onClick={toggleMenu}
@@ -47,7 +44,6 @@ function Navbar({ name, menuItems }) {
                 </button>
             </div>
 
-            {/* Desktop menu items */}
             <div className="hidden md:flex md:items-center">
                 <div className="flex flex-row">
                 {menuItems.map((item, index) => (
@@ -63,7 +59,6 @@ function Navbar({ name, menuItems }) {
             </div>
             </div>
 
-            {/* Mobile menu */}
             {isMenuOpen && (
             <div className="md:hidden py-2">
                 {menuItems.map((item, index) => (

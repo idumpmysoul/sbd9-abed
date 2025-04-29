@@ -24,8 +24,8 @@ function CardGrid({ posts }) {
                     : post.body.replace(/\n/g, " ")}
                 </p>
             </div>
-            <div className="px-4 py-2 bg-gray-50 border-t border-gray-100">
-                <button className="text-blue-600 hover:text-blue-800 text-sm font-medium">
+            <div className="px-4 py-2 bg-white border-t border-gray-250">
+                <button className="text-white hover:text-blue-600 text-sm font-medium">
                 Read more
                 </button>
             </div>
